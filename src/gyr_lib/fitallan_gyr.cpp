@@ -57,10 +57,10 @@ FitAllanGyr::FitAllanGyr( std::vector< double > sigma2s, std::vector< double > t
     std::cout << "================================================================== " << std::endl;
     std::cout << "### Continuous-time Allan variance coefficients" << std::endl;
     std::cout << "Quantization Noise (Q): " << getQ( ) << R"( rad)" << std::endl;
-    std::cout << "White Rate Noise   (N): " << getN( ) << R"( rad / sqrt(s)        # Kalibr: \sigma_a, Accelerometer "white noise", accelerometer_noise_density)" << std::endl;
+    std::cout << "White Rate Noise   (N): " << getN( ) << R"( rad / sqrt(s)        # Kalibr: \sigma_g, Gyroscope "white noise", gyroscope_noise_density)" << std::endl;
     std::cout << "Bias Instability   (B): " << getB( ) << R"( rad / s)" << std::endl;
     //std::cout << "Bias Instability   (B): " << getBiasInstability( ) << R"( rad / s, at )" << taus[findMinIndex( calcSimDeviation( taus ) )] << " s" << std::endl;
-    std::cout << "Rate Random Walk   (K): " << getK( ) << R"( rad / (s * sqrt(s))  # Kalibr: \sigma_{ba}, Accelerometer "random walk", accelerometer_random_walk)" << std::endl;
+    std::cout << "Rate Random Walk   (K): " << getK( ) << R"( rad / (s * sqrt(s))  # Kalibr: \sigma_{bg}, Gyroscope "random walk", gyroscope_random_walk)" << std::endl;
     std::cout << "Angle Rate Ramp    (R): " << getR( ) << R"( rad / s^2)" << std::endl;
     std::cout << "================================================================== " << std::endl;
 }
