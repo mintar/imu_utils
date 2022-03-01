@@ -59,10 +59,10 @@ FitAllanAcc::FitAllanAcc( std::vector< double > sigma2s, std::vector< double > t
     std::cout << "================================================================== " << std::endl;
     std::cout << "### Continuous-time Allan variance coefficients" << std::endl;
     std::cout << "Quantization Noise (Q): " << getQ( ) << R"( m / s)" << std::endl;
-    std::cout << "White Veloc. Noise (N): " << getN( ) << R"( m / s / sqrt(s)        # Kalibr: \sigma_g, Gyroscope "white noise", gyroscope_noise_density)" << std::endl;
+    std::cout << "White Veloc. Noise (N): " << getN( ) << R"( m / s / sqrt(s)        # Kalibr: \sigma_a, Accelerometer "white noise", accelerometer_noise_density)" << std::endl;
     std::cout << "Bias Instability   (B): " << getB( ) << R"( m / s^2)" << std::endl;
     //std::cout << "Bias Instability   (B): " << getBiasInstability( ) << R"( m / s^2, at )" << taus[findMinIndex( calcSimDeviation( taus ) )] << " s" << std::endl;
-    std::cout << "Accel. Random Walk (K): " << getK( ) << R"( m / (s^2 * sqrt(s))  # Kalibr: \sigma_{bg}, Gyroscope "random walk", gyroscope_random_walk)" << std::endl;
+    std::cout << "Accel. Random Walk (K): " << getK( ) << R"( m / (s^2 * sqrt(s))  # Kalibr: \sigma_{ba}, Accelerometer "random walk", accelerometer_random_walk)" << std::endl;
     std::cout << "Acceleration Ramp  (R): " << getR( ) << R"( m / s^3)" << std::endl;
     std::cout << "================================================================== " << std::endl;
 }
